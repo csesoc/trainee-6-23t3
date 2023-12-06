@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+.sec-body {
+    background: linear-gradient(180deg,#F4DECB, #F4DECB, grey);;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: flex-end;
+}
+
+.description {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: flex-start;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.login {
+    grid-column: 1;
+    grid-row: 2;
+    align-self: flex-end;
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 60px;
+    margin-left: 150px;
+    z-index: 1;
+}
+
+.login-text {
+    display: block;
+    width: fit-content;
+}
+
+.login-text:hover {
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.title {
+    align-self: flex-end;
+    justify-self: flex-end;
+    background-color: transparent;
+    color: white;
+    font-size: 5rem;
+    font-weight: 600;
+    z-index: 2;
+    margin-bottom: 30px;
+    margin-right: 40px;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.background {
+    position: absolute;
+}
+
+.needle {
+    position: relative;
+    height: 5vw;
+    width: 100vw;
+    background: linear-gradient(225deg, #49274A, rgba(255, 255, 255, 0.2));
+    transform: translate(-40%, 450%) rotate(20deg);
+    z-index: 1;
+}
+
+.record {
+    margin-left: 35%;
+    margin-top: -25%;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.black {
+    background-image: conic-gradient(from 180deg, black, rgba(0, 0, 0, 0.3), black, black);
+    position: absolute;
+    height: 15vw;
+    width: 15vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.white {
+    background-color: white;
+    position: absolute;
+    height: 0.5vw;
+    width: 0.5vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.purple {
+    height: 95vw;
+    width: 95vw;
+    position: relative;
+    background-image: conic-gradient(from 160deg, #49274A, rgba(255,255,255,0.3), #49274A);
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
