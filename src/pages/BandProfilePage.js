@@ -3,14 +3,14 @@ import Navbar from "./Navbar.js";
 
 const BandProfilePage = () => {
     // purple 94618E dark purple 49274A white F8EEE7 cream F4DECB 
-    document.body.style.backgroundColor = "#F4DECB";
+    document.body.style.background = 'linear-gradient(90deg, #ad8df7, #f0a1b9)';
     document.body.style.margin = "0";
 
     const container = {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        height: "100vh",
+        height: "120vh",
         // border: "5px solid orange"
     }
 
@@ -20,8 +20,8 @@ const BandProfilePage = () => {
     }
 
     const block = {
-        backgroundColor: "#94618E",
-        color: "#F8EEE7",
+        backgroundColor: "#F8EEE7",
+        color: "#49274A",
         padding: "20px",
         margin: "10px",
         borderRadius: "10px",
@@ -34,7 +34,7 @@ const BandProfilePage = () => {
     }
 
     const li = {
-        backgroundColor: "#F8EEE7",
+        backgroundColor: "#F4DECB",
         margin: "10px",
         padding: "10px",
         color: "#49274A",
