@@ -5,15 +5,17 @@ const Navbar = () => {
     const navigate = useNavigate();
 
     const navbar = {
-        backgroundColor: "#49274A",
-        margin: "0 0 10px 0",
+        // backgroundColor: "#49274A",
+        margin: "10px 0",
         padding: "0 10%",
         display: "flex",
         justifyContent: "space-between",
     }
 
     const element = {
-        backgroundColor: "#F4DECB",
+        // backgroundColor: "#94618E",
+        border: "1px solid #49274A",
+        color: "49274A",
         padding: "20px",
         display: "flex",
         alignItems: "center",
