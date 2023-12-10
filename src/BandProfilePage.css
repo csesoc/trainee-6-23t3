@@ -1,5 +1,6 @@
 hr {
     border: 1px solid #49274A;
+    border-radius: 1px;
     margin-bottom: 30px;
     width: 100%;
 }
@@ -30,6 +31,7 @@ hr {
     max-width: 100%;
     max-height: 100%;
     flex: 1;
+    overflow: auto;
 }
 
 .block-centered {
@@ -56,4 +58,5 @@ li {
     padding: 10px;
     color: #49274A;
     border-radius: 10px;
+    margin-left: 0;
 }

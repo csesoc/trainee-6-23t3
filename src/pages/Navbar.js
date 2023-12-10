@@ -7,6 +7,7 @@ const Navbar = () => {
 
     return (
         <div className='navbar'>
+            <img src={require("./logo.png")} style={{width: "60px"}} />
             <div className='element' onClick={() => navigate('/')}>Home</div>
             <div className='element' onClick={() => navigate('/venues')}>Book Venues</div>
             <div className='element' onClick={() => navigate('/gigs')}>Find Gigs</div>

@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useParams } from "react-router-dom";
 import Navbar from "./Navbar.js";
 import "../BandProfilePage.css";
 
-const BandProfilePage = ({image, bandName, memberList, performanceList, information}) => {
-    // purple 94618E dark purple 49274A white F8EEE7 cream F4DECB
+// purple 94618E dark purple 49274A white F8EEE7 cream F4DECB
+const BandProfilePage = ({bandName, memberList, performanceList, information, image}) => {
     document.body.style.background = "linear-gradient(0deg, #ad8df7, #f0a1b9)";
     document.body.style.height = "99vh";
     document.body.style.margin = "0";
@@ -14,7 +15,7 @@ const BandProfilePage = ({image, bandName, memberList, performanceList, informat
             <div className="container">
                 <div className="column">
                     <div className="block-centered">
-                        { image ? <img src={require("./" + image)} /> : <img src={require("./defaultImage.png")} /> }
+                        { image ? <img src={require("./" + image)} style={{width: "200px"}} /> : <img src={require("./defaultImage.png")} /> }
                         <h1>{ bandName !== undefined ? bandName : "Band Name" }</h1>
                         <h2>Socials</h2>
                         <hr />
