@@ -12,7 +12,6 @@ const Navbar = () => {
             <div className='element' onClick={() => navigate('/venues')}>Book Venues</div>
             <div className='element' onClick={() => navigate('/gigs')}>Find Gigs</div>
             <div className='element' onClick={() => navigate('/view-bands')}>View Bands</div>
-            <div className='element' onClick={() => navigate('/band-profile')}>Band Profile</div>
         </div>
     )
 }
