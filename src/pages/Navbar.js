@@ -8,9 +8,10 @@ const Navbar = () => {
     return (
         <div className='navbar'>
             <div className='element' onClick={() => navigate('/')}>Home</div>
-            <div className='element' onClick={() => navigate('/login')}>Login</div>
             <div className='element' onClick={() => navigate('/venues')}>Book Venues</div>
-            <div className='element' onClick={() => navigate('/search')}>Find Gigs</div>
+            <div className='element' onClick={() => navigate('/gigs')}>Find Gigs</div>
+            <div className='element' onClick={() => navigate('/view-bands')}>View Bands</div>
+            <div className='element' onClick={() => navigate('/band-profile')}>Band Profile</div>
         </div>
     )
 }
