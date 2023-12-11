@@ -1,0 +1,39 @@
+.navbar {
+    margin: 10px 0;
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 5px solid green; */
+    position: fixed;
+    width: 100%;
+    top: 5px;
+    box-sizing: border-box;
+}
+
+@keyframes hover-animation {
+    from {
+        background-color: none;
+    }
+    to {
+        background-color: #F8EEE7;
+        color: #94618E;
+    }
+}
+
+.element:hover {
+    cursor: pointer;
+    animation-name: hover-animation;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.element {
+    color: #F8EEE7;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    margin: 10px;
+}

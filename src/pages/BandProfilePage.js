@@ -1,69 +1,47 @@
 import React from "react";
+import Navbar from "./Navbar.js";
+import "../BandProfilePage.css";
 
-const BandProfilePage = () => {
-    document.body.style.backgroundColor = "#94618E";
-    document.body.style.margin = "1%";
-
-    const container = {
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100vh",
-    }
-
-    const column = {
-        // border: "5px solid green"
-    }
-
-    const block = {
-        backgroundColor: "#F8EEE7",
-        color: "#49274A",
-        padding: "20px",
-        margin: "10px",
-        borderRadius: "10px",
-    }
-
-    const ul = {
-        listStyleType: "none",
-        margin: "0",
-        padding: "0",
-    }
-
-    const li = {
-        backgroundColor: "#F4DECB",
-        margin: "10px",
-        padding: "10px",
-    }
+// purple 94618E dark purple 49274A white F8EEE7 cream F4DECB
+const BandProfilePage = ({bandName, memberList, performanceList, information, image}) => {
+    document.body.style.background = "linear-gradient(0deg, #ad8df7, #f0a1b9)";
+    document.body.style.height = "100vh";
+    document.body.style.margin = "0";
 
     return (
-        <div className="band-container" style={container}>
-            <div className="column" style={{...column, width: "300px"}}>
-                <div className="band-block" style={{...block, display: "flex", alignItems: "center", flexDirection: "column"}}>
-                    <img src={require("./defaultImage.png")} />
-                    <h1>Band Name</h1>
-                    <h2>Socials</h2>
+        <div>
+            <Navbar />
+            <div className="container">
+                <div className="column">
+                    <div className="block-centered">
+                        { image ? <img src={require("./" + image)} style={{width: "200px"}} /> : <img src={require("./defaultImage.png")} /> }
+                        <h1>{ bandName !== undefined ? bandName : "Band Name" }</h1>
+                        <h2>Socials</h2>
+                        <hr />
+                        <div style={{display: "flex"}}>
+                            <img alt="twitter" src={require("./twitter.png")} style={{width: "40px", margin: "0 20px"}} />
+                            <img alt="facebook" src={require("./facebook.png")} style={{width: "40px", margin: "0 20px"}} />
+                            <img alt="instagram" src={require("./instagram.png")} style={{width: "40px", margin: "0 20px"}} />
+                        </div>
+                    </div>
+                    <div className="block">
+                        <h1>Band Members</h1>
+                        <ul>
+                            { memberList ? memberList.map((item, index) => (<li key={index}>{item}</li>)) : <li>No Members</li> }
+                        </ul>
+                    </div>
                 </div>
-                <div className="band-block" style={block}>
-                    <h1>Band Members</h1>
-                    <ul style={ul}>
-                        <li style={li}>Band Member 1</li>
-                        <li style={li}>Band Member 2</li>
-                        <li style={li}>Band Member 3</li>
-                    </ul>
-                </div>
-            </div>
-            <div className="column" style={column}>
-                <div className="band-block" style={block}>
-                    <h1>Upcoming Performances</h1>
-                    <ul style={ul}>
-                        <li style={li}>Performance 1</li>
-                        <li style={li}>Performance 2</li>
-                        <li style={li}>Performance 3</li>
-                    </ul>
-                </div>
-                <div className="band-block" style={block}>
-                    <h1>Band Information</h1>
-                    <p>Hello world</p>
+                <div className="column">
+                    <div className="block">
+                        <h1>Upcoming Performances</h1>
+                        <ul>
+                            { performanceList ? performanceList.map((item, index) => (<li key={index}>{item}</li>)) : <li>No Performances</li> }
+                        </ul>
+                    </div>
+                    <div className="block">
+                        <h1>Band Information</h1>
+                        <p>{ information !== undefined ? information : "Band Information" }</p>
+                    </div>
                 </div>
             </div>
         </div>

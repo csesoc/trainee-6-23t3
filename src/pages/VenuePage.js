@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import {SearchBarComponent} from "../venueComponents/SearchBarComponent"
 import { SearchResults } from "../venueComponents/SearchResults";
+import Navbar from "./Navbar.js";
 import './VenuePage.css';
 
 const VenuePage = () => {
     const [results, setResults] = useState([]);
 
     return <div className="venue-page">
+        <Navbar />
         <img src={require("../images/disc img.png")} alt="Record Background" id = "disc-img" />
         
         <div id = "main-box">

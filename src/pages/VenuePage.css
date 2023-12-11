@@ -5,6 +5,7 @@
 
 .venue-page {
     display: flex;
+    /* flex-direction: column; */
     background-color: #674e68;
     /* opacity: 0.77; */
     height: 100vh;
@@ -15,6 +16,7 @@
 }
 
 #main-box {
+    border: 5px solid green;
     position: absolute;
     margin-left: 55%;
     justify-content: flex-start;
