@@ -5,7 +5,7 @@ import "../BandProfilePage.css";
 // purple 94618E dark purple 49274A white F8EEE7 cream F4DECB
 const BandProfilePage = ({bandName, memberList, performanceList, information, image}) => {
     document.body.style.background = "linear-gradient(0deg, #ad8df7, #f0a1b9)";
-    document.body.style.height = "99vh";
+    document.body.style.height = "100vh";
     document.body.style.margin = "0";
 
     return (
