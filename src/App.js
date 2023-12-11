@@ -3,6 +3,7 @@ import LandingPage from "./pages/LandingPage";
 import LoginPage from "./pages/LoginPage";
 import BandProfilePage from "./pages/BandProfilePage";
 import ViewBands from "./pages/ViewBands";
+import VenuePage from "./pages/VenuePage";
 import "./App.css";
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Route path="/band-profile-1" element={<BandProfilePage bandName={band1.name} memberList={band1.memberList} information={band1.information} image={band1.image} />} />
         <Route path="/band-profile-2" element={<BandProfilePage bandName={band2.name} memberList={band2.memberList} information={band2.information} image={band2.image} performanceList={band2.performanceList} />} />
         <Route path="/view-bands" element={<ViewBands />} />
+        <Route path="/venues" element={<VenuePage />} />
       </Routes>
     </BrowserRouter>
   );
