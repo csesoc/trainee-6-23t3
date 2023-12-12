@@ -14,9 +14,10 @@ const Band = ({image, bandName, memberList, information, onClick}) => {
             { image 
                 ? <img src={require("./" + image)} style={{width: "200px", objectFit: "cover"}} />
                 : <img src={require("./defaultImage.png")} style={{width: "200px", objectFit: "cover"}} /> }
-            <div style={{width: "100%"}}>
+            <div style={{width: "100%", padding: "20px 0"}}>
                 <h2 style={{marginBottom: "0"}}>{ bandName !== undefined ? bandName : "Band Name" }</h2>
                 <p style={{color: "lightslategray", marginTop: "0"}}>{memberList !== undefined ? (members) : "members"}</p>
+                <br />
                 <p style={{fontSize: "1.3em", fontWeight: "500"}}>About</p>
                 <p>{information ? (information) : "This band has no information."}</p>
             </div>

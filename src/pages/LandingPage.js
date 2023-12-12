@@ -1,5 +1,6 @@
 import React from "react";
 import "./LandingPage.css";
+import Navbar from "./Navbar.js";
 import { useNavigate } from "react-router-dom";
 
 const LandingPage = () => {
@@ -11,6 +12,7 @@ const LandingPage = () => {
 
   return (
   <div class="sec-body">
+    <Navbar backgroundColour={"#49274A"} />
     <div class="background">
       <div class="needle"></div>
       <div class="record">
@@ -22,7 +24,11 @@ const LandingPage = () => {
       </div>
     </div>
     <div class='description'>Find Music on Campus</div>
-    <div class="login"><p class="login-text" onClick={handleClick}>Login</p></div>
+
+    <div class="login">
+      <p class="btn" onClick={handleClick}>Login</p>
+      {/* <button class="btn">Login2</button> */}
+    </div>
     <div class="title">UNSWGigs</div>
   </div>);
 };

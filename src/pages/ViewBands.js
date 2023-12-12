@@ -28,9 +28,12 @@ const ViewBands = () => {
 
     return (
         <div>
-            <Navbar />
+            <Navbar backgroundColour={"#49274A"} />
             <div className={styles.container}>
-                <h1>Bands</h1>
+                <div className={styles.banner}>
+                    <h1>Bands</h1>
+                    <input type="text" placeholder="Search" className={styles.searchbar} />
+                </div>
                 <Band onClick={() => navigate("/band-profile-1")} bandName={band1.name} memberList={band1.memberList} information={band1.information} image={band1.image} />
                 <Band onClick={() => navigate("/band-profile-2")} bandName={band2.name} memberList={band2.memberList} information={band2.information} image={band2.image} performanceList={band2.performanceList} />
             </div>

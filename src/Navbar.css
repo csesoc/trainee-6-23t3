@@ -1,14 +1,14 @@
-.navbar {
+/* .navbar {
     margin: 10px 0;
     padding: 0 10%;
     display: flex;
     justify-content: space-between;
-    /* border: 5px solid green; */
     position: fixed;
     width: 100%;
     top: 5px;
     box-sizing: border-box;
-}
+    z-index: 3;
+} */
 
 @keyframes hover-animation {
     from {

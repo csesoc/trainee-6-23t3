@@ -21,7 +21,7 @@
     align-self: flex-start;
     font-size: 2rem;
     font-weight: 600;
-    margin-top: 50px;
+    margin-top: 80px;
     margin-left: 50px;
 }
 
@@ -123,3 +123,48 @@
         transform: rotate(360deg);
     }
 }
+
+.btn {
+    background-image: linear-gradient(to right, #FF8008 0%, #FFC837  51%, #FF8008  100%);
+    margin: 10px;
+    padding: 10px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 10px #eee;
+    border-radius: 10px;
+    display: block;
+    align-self: flex-end;
+    width: 50%;
+}
+
+.btn:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 0 12px rgba(255, 0, 0, 1),
+                0 0 12px rgba(255, 154, 0, 1);
+}
+
+/* .rainbow-box {
+    width: 80vw;
+    height: 200px;
+    border-radius: 5px;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(255, 154, 0, 1) 10%,
+        rgba(208, 222, 33, 1) 20%,
+        rgba(79, 220, 74, 1) 30%,
+        rgba(63, 218, 216, 1) 40%,
+        rgba(47, 201, 226, 1) 50%,
+        rgba(28, 127, 238, 1) 60%,
+        rgba(95, 21, 242, 1) 70%,
+        rgba(186, 12, 248, 1) 80%,
+        rgba(251, 7, 217, 1) 90%,
+        rgba(255, 0, 0, 1) 100%
+    );
+} */
