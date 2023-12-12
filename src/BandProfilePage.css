@@ -13,7 +13,6 @@ hr {
 }
 
 .column {
-    /* border: 2px solid green; */
     margin-top: 40px;
     height: 70vh;
     width: 30vw;
@@ -45,6 +44,44 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.performance {
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+.performance > p {
+    flex: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tickets-btn {
+    flex: 1;
+    background-image: linear-gradient(to right, #FF8008 0%, #FFC837  51%, #FF8008  100%);
+    margin: 10px;
+    padding: 10px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 10px #eee;
+    border-radius: 10px;
+    display: block;
+    align-self: flex-end;
+}
+
+.tickets-btn:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 0 12px rgba(255, 0, 0, 1),
+                0 0 12px rgba(255, 154, 0, 1);
 }
 
 ul {

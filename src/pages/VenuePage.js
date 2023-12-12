@@ -8,7 +8,7 @@ const VenuePage = () => {
     const [results, setResults] = useState([]);
 
     return <div className="venue-page">
-        <Navbar />
+        <Navbar backgroundColour={"#49274A"} />
         <img src={require("../images/disc img.png")} alt="Record Background" id = "disc-img" />
         
         <div id = "main-box">

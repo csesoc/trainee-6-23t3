@@ -10,13 +10,15 @@ const BandProfilePage = ({bandName, memberList, performanceList, information, im
 
     return (
         <div>
-            <Navbar />
+            <Navbar backgroundColour={"#fa76ff"} />
             <div className="container">
                 <div className="column">
                     <div className="block-centered">
                         { image ? <img src={require("./" + image)} style={{width: "200px"}} /> : <img src={require("./defaultImage.png")} /> }
+                        <br />
                         <h1>{ bandName !== undefined ? bandName : "Band Name" }</h1>
-                        <h2>Socials</h2>
+                        <br />
+                        <h2 style={{marginBottom: "10px"}}>Socials</h2>
                         <hr />
                         <div style={{display: "flex"}}>
                             <img alt="twitter" src={require("./twitter.png")} style={{width: "40px", margin: "0 20px"}} />
@@ -35,11 +37,19 @@ const BandProfilePage = ({bandName, memberList, performanceList, information, im
                     <div className="block">
                         <h1>Upcoming Performances</h1>
                         <ul>
-                            { performanceList ? performanceList.map((item, index) => (<li key={index}>{item}</li>)) : <li>No Performances</li> }
+                            { performanceList 
+                                ? performanceList.map((item, index) => (
+                                    <li key={index} className="performance">
+                                        <p>{item}</p>
+                                        <button className="tickets-btn">Get tickets</button>
+                                    </li>
+                                )) 
+                                : <li>No Performances</li> }
                         </ul>
                     </div>
                     <div className="block">
                         <h1>Band Information</h1>
+                        <br />
                         <p>{ information !== undefined ? information : "Band Information" }</p>
                     </div>
                 </div>
