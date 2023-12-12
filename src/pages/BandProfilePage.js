@@ -10,7 +10,7 @@ const BandProfilePage = ({bandName, memberList, performanceList, information, im
 
     return (
         <div>
-            <Navbar backgroundColour={"#fa76ff"} />
+            <Navbar backgroundColour={"#6b3c65"} />
             <div className="container">
                 <div className="column">
                     <div className="block-centered">
@@ -41,7 +41,7 @@ const BandProfilePage = ({bandName, memberList, performanceList, information, im
                                 ? performanceList.map((item, index) => (
                                     <li key={index} className="performance">
                                         <p>{item}</p>
-                                        <button className="tickets-btn">Get tickets</button>
+                                        <button className="tickets-btn" onClick={() => alert("Booking tickets!")}>Get tickets</button>
                                     </li>
                                 )) 
                                 : <li>No Performances</li> }

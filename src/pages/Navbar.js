@@ -24,10 +24,19 @@ const Navbar = ({backgroundColour}) => {
     return (
         <div className='navbar' style={navbarStyle}>
             <img src={require("./logo.png")} style={{width: "60px"}} />
-            <div className='element' onClick={() => navigate('/')}>Home</div>
-            <div className='element' onClick={() => navigate('/venues')}>Book Venues</div>
-            <div className='element' onClick={() => navigate('/view-bands')}>View Bands</div>
-            <div className='element' onClick={() => navigate('/gigs')}>Find Gigs</div>
+            <div className='element' onClick={() => navigate('/')}>
+                <img src={require("./home.png")} style={{width: "20px"}} />&nbsp;
+                Home
+            </div>
+            <div className='element' onClick={() => navigate('/venues')}>
+                <img src={require("./location.png")} style={{width: "20px"}} />&nbsp;
+                Book Venues
+            </div>
+            <div className='element' onClick={() => navigate('/view-bands')}>
+                <img src={require("./microphone.png")} style={{width: "20px"}} />&nbsp;
+                View Bands
+            </div>
+            <div className='element' onClick={() => navigate('/login')}>Login</div>
         </div>
     )
 }
