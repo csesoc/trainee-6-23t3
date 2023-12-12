@@ -32,7 +32,7 @@ const ViewBands = () => {
         memberList: ["John Cook", "Jim", "John", "Sugar", "Gin"],
         information: "Bee tea ass came from a small company, they started with nothing. Gin who was casted just because of his looks, Sugar who left his family and gambled his education just to do what he really wanted to be, RaP mOnStEr who was never have been supported by his parents, Gee Mean who thought himself as ugly and fat, The 22nd english alphabet whose always been part of Bee tea ass but was never shown in any promotions- not until they debut, Hoe seok who seemed to always laugh but never felt as an accomplishment to his father, And Junglebok who was very shy and have saved his parents at a young age by auditioning to companies. Remember the days when they were struggling? They even have to sacrifice and work hard just so they could eat? They were squeezing themselves into one small apartment and have to take responsibilities- the reason why they wrote the song 'Move'. Those times when Gee Mean has to starve himself just because people calls him fat and ugly. That one interview where Sugar said that; it was nice that people listens to their music because The 22nd English Alphabet and Junglebok are good looking...",
         image: "BDS.png",
-        performanceList: ["Sydney Opera House", "Mediterranean Sea"],
+        performanceList: ["Antarctica", "Mediterranean Sea"],
     }
 
     const band4 = {

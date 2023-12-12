@@ -5,6 +5,9 @@ import { useNavigate } from "react-router-dom";
 
 const LandingPage = () => {
   const navigate = useNavigate();
+
+  document.body.style.overflow = "hidden";
+
   function handleClick() {
     console.log('yay');
     navigate('/login')
