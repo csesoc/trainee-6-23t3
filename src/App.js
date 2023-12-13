@@ -5,6 +5,7 @@ import BandProfilePage from "./pages/BandProfilePage";
 import ViewBands from "./pages/ViewBands";
 import VenuePage from "./pages/VenuePage";
 import "./App.css";
+import FindingPage from "./pages/FindingPage";
 
 function App() {
   const band1 = {
@@ -53,6 +54,7 @@ function App() {
         <Route path="/band-profile-4" element={<BandProfilePage bandName={band4.name} memberList={band4.memberList} information={band4.information} image={band4.image} performanceList={band4.performanceList} />} />
         <Route path="/view-bands" element={<ViewBands />} />
         <Route path="/venues" element={<VenuePage />} />
+        <Route path="/find-gigs" element={<FindingPage />} />
       </Routes>
     </BrowserRouter>
   );

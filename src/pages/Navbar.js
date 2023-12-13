@@ -36,6 +36,7 @@ const Navbar = ({backgroundColour}) => {
                 <img src={require("./microphone.png")} style={{width: "20px"}} />&nbsp;
                 View Bands
             </div>
+            <div className='element' onClick={() => navigate('/find-gigs')}>Find Gigs</div>
             <div className='element' onClick={() => navigate('/login')}>Login</div>
         </div>
     )
