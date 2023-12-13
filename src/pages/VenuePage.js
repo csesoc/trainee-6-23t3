@@ -49,7 +49,7 @@ const VenuePage = () => {
                 </div>
             </div>  
 
-            <button id="book-box">
+            <button id="book-box" onClick={() => alert("Booking Compelte")}>
                 <h1>Book</h1>
             </button>  
         </div>
